@@ -1,6 +1,6 @@
 <template>
   <div class="box pf">
-    <a href="https://github.com/Titivoot/elfi-bot" target="_blank" class="pf-item" v-for="project in projects" :key="project.id">
+    <a :href="project.html_url" target="_blank" class="pf-item" v-for="project in projects" :key="project.id">
         <p class="pf-title">{{ project.name }}</p>
         <p class="pf-details">{{ project.description }}</p>
     </a>
